@@ -1,0 +1,33 @@
+:root{
+    --offcanvas-width:270px;
+    --top-navbar-height: 56px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav_bar{
+    position: sticky;
+    height: auto;
+}
+.user-icon{
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.sidebar-nav{
+    width: var(--offcanvas-width)!important;
+   margin-top: 10vh;
+}
+@media(min-width:992px){
+    .offcanvas-backdrop{
+        display: none !important;
+    }
+    .sidebar-nav{
+        transform: none !important;
+        visibility: visible !important;
+        /* height: var(--top-navbar-height) !important; */
+    }
+}
