@@ -19,7 +19,13 @@ body{
 }
 .sidebar-nav{
     width: var(--offcanvas-width)!important;
-   margin-top: 10vh;
+   margin-top: 8vh;
+}
+.right-icon{
+    transition: all 0.2s;
+}
+.sidebar_link[aria-expanded="true"] .right-icon{
+transform: rotate(180deg);
 }
 @media(min-width:992px){
     .offcanvas-backdrop{
@@ -29,5 +35,8 @@ body{
         transform: none !important;
         visibility: visible !important;
         /* height: var(--top-navbar-height) !important; */
+    }
+    .main{
+        margin-left: var(--offcanvas-width);
     }
 }
