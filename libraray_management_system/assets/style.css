@@ -8,6 +8,14 @@ body{
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+.main-login{
+    background-image: url('/assets/images/libraray_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ba
+    
+}
 .nav_bar{
     position: sticky;
     height: auto;
